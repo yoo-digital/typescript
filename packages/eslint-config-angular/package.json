@@ -1,5 +1,5 @@
 {
-  "name": "@yoo-digital/eslint-config-react",
+  "name": "@yoo-digital/eslint-config-angular",
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
   "version": "0.1.0",
   "license": "UNLICENSED",
@@ -53,13 +53,23 @@
     }
   ],
   "main": "index.js",
+  "files": [
+    "README.md",
+    "index.js",
+    "tsconfig.json"
+  ],
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
   },
   "engines": {
     "node": ">= 12.4.0",
     "yarn": ">= 1.15.0"
   },
-  "devDependencies": {},
-  "peerDependencies": {}
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "eslint": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "typescript": "^3.6.2"
+  }
 }

@@ -51,12 +51,18 @@
       "email": "yanick.recher@yooapps.com"
     }
   ],
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "index.js",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
+  },
   "engines": {
     "node": ">= 12.4.0",
     "yarn": ">= 1.15.0"
-  },
-  "scripts": {
-    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.0.0"
