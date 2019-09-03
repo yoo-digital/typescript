@@ -1,0 +1,62 @@
+{
+  "name": "@yoo-digital/typescript",
+  "description": "Mono repository containing reusable configuration/setup files for TypeScript projects within YOO",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "keywords": [
+    "TypeScript",
+    "Mono Repository"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/yooapps/yoo-digital-typescript.git"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Christoph Dörfel",
+      "email": "christoph.doerfel@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yooapps.com"
+    },
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yooapps.com"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yooapps.com"
+    }
+  ],
+  "engines": {
+    "node": ">= 12.4.0",
+    "yarn": ">= 1.15.0"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}

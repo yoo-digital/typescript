@@ -1,0 +1,87 @@
+{
+  "name": "@yoo-digital/eslint-config-react",
+  "description": "ESLint configuration file containing rules for React projects using TypeScript",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "keywords": [
+    "TypeScript",
+    "React",
+    "ESLint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/yooapps/yoo-digital-typescript.git",
+    "directory": "packages/eslint-config-react"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Christoph Dörfel",
+      "email": "christoph.doerfel@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yooapps.com"
+    },
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yooapps.com"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yooapps.com"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
+  },
+  "engines": {
+    "node": ">= 12.4.0",
+    "yarn": ">= 1.15.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "@yoo-digital/eslint-config-base": "^0.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^5.16.0 || ^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "typescript": "^3.6.2"
+  }
+}

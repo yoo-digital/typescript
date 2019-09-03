@@ -1,0 +1,78 @@
+{
+  "name": "@yoo-digital/eslint-config-base",
+  "description": "ESLint configuration file containing rules for TypeScript projects",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "keywords": [
+    "TypeScript",
+    "ESLint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/yooapps/yoo-digital-typescript.git",
+    "directory": "packages/eslint-config-base"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Christoph Dörfel",
+      "email": "christoph.doerfel@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yooapps.com"
+    },
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yooapps.com"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yooapps.com"
+    }
+  ],
+  "engines": {
+    "node": ">= 12.4.0",
+    "yarn": ">= 1.15.0"
+  },
+  "scripts": {
+    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "typescript": "^3.6.2"
+  }
+}
