@@ -3,7 +3,9 @@
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
   "version": "0.1.1",
   "license": "UNLICENSED",
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "TypeScript",
     "Angular",
