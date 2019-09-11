@@ -61,13 +61,6 @@ module.exports =  {
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/prefer-interface': 'off',
-    'comma-dangle': ['error', {
-      'arrays': 'always',
-      'objects': 'always',
-      'imports': 'ignore',
-      'exports': 'ignore',
-      'functions': 'ignore',
-    }],
     'complexity': ['warn', 10],
     'import/no-extraneous-dependencies': [
       'error',
