@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-react",
   "description": "ESLint configuration file containing rules for React projects using TypeScript",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "UNLICENSED",
   "publishConfig": {
     "access": "public"
@@ -69,7 +69,7 @@
     "yarn": ">= 1.15.0"
   },
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "^0.1.4",
+    "@yoo-digital/eslint-config-base": "^0.1.5",
     "eslint-config-airbnb": "^18.0.1"
   },
   "devDependencies": {
