@@ -86,4 +86,19 @@ module.exports =  {
       },
     ],
   },
+  overrides: [
+    {
+      files: [
+        '.storybook/**',
+        'stories/**',
+        '**/*.stories.*',
+        "**/*.test.*",
+        '**/*.spec.*',
+      ],
+      rules: {
+        'max-lines-per-function': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
+  ],
 };
