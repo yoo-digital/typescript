@@ -62,6 +62,16 @@ module.exports =  {
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/prefer-interface': 'off',
     'complexity': ['warn', 10],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        'js': 'never',
+        'jsx': 'never',
+        'ts': 'never',
+        'tsx': 'never',
+      },
+    ],
     'import/no-extraneous-dependencies': [
       'error',
       {
