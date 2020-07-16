@@ -104,11 +104,11 @@
     eslint-visitor-keys "^1.1.0"
 
 "@yoo-digital/eslint-config-base@^0.3.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@yoo-digital/eslint-config-base/-/eslint-config-base-0.2.1.tgz#0f141311022723fe74a459159652c53e0bb94a11"
-  integrity sha512-Ej316686/rUprVTgPv9HIvIhQZAl/AkEtTb8EXqdasvruBXYfYhGAqmWYpevjvQF+9E0pQ8AIWCj0g7/bnz/hA==
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@yoo-digital/eslint-config-base/-/eslint-config-base-0.3.0.tgz#3f2a49c34e913f1035c3be0eab2cbcd4cd70f3a2"
+  integrity sha512-icO2XB9L/iHlOuiy9KVHrRloGFXPy2CSGlKf92KLRa9rn43rRIwTngMGFD3LjiDq4FQIFVKNp4AEV3O4Vo6fHQ==
   dependencies:
-    eslint-config-airbnb-base "^14.1.0"
+    eslint-config-airbnb-base "^14.2.0"
 
 acorn-jsx@^5.2.0:
   version "5.2.0"
@@ -363,7 +363,7 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-airbnb-base@^14.1.0:
+eslint-config-airbnb-base@^14.2.0:
   version "14.2.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.0.tgz#fe89c24b3f9dc8008c9c0d0d88c28f95ed65e9c4"
   integrity sha512-Snswd5oC6nJaevs3nZoLSTvGJBvzTfnBqOIArkf3cbyTyq9UD79wOk8s+RiL6bhca0p/eRO6veczhf6A/7Jy8Q==
