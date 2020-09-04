@@ -58,6 +58,14 @@ module.exports =  {
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
 
+    // note you must disable the base rule as it can report incorrect errors
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
+
+    // note you must disable the base rule as it can report incorrect errors
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-inferrable-types': 'off',
@@ -87,7 +95,6 @@ module.exports =  {
     'max-depth': ['warn', 3],
     'max-lines-per-function': ['warn', 50],
     'no-await-in-loop': 'error',
-    'no-shadow': 'error',
     'no-useless-rename': 'error',
     'quotes': [
       'error',
