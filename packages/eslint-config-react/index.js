@@ -67,7 +67,7 @@ module.exports =  {
         '**/*.tsx',
       ],
       rules: {
-        'react/prop-types': 'off'
+        'react/prop-types': 'off',
       },
     },
   ],
