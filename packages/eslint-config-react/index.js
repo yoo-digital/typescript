@@ -32,6 +32,18 @@ module.exports =  {
     ],
 
     'react/jsx-props-no-spreading': 'off',
+
+    /**
+     * Unfortunately the eslint-plugin-react does not work well with TypeScript.
+     * It does not identify the explicit type given to the FC or map function.
+     * Because of this, the rule has to be turned off completely.
+     *
+     * See: https://github.com/yannickcr/eslint-plugin-react/issues/1461
+     *      https://github.com/yannickcr/eslint-plugin-react/issues/2353
+     *      https://github.com/yannickcr/eslint-plugin-react/issues/2396
+     */
+    'react/prop-types': 'off',
+    'react/require-default-props': 'off',
   },
   overrides: [
     /**
@@ -51,23 +63,6 @@ module.exports =  {
       ],
       rules: {
         'max-lines-per-function': 'off',
-      },
-    },
-
-    /**
-     * Unfortunately the eslint-plugin-react does not work well with TypeScript.
-     * It does not identify the explicit type given to the FC or map function.
-     * Because of this, the rule has to be turned off completely.
-     *
-     * See: https://github.com/yannickcr/eslint-plugin-react/issues/1461
-     *      https://github.com/yannickcr/eslint-plugin-react/issues/2353
-     */
-    {
-      files: [
-        '**/*.tsx',
-      ],
-      rules: {
-        'react/prop-types': 'off',
       },
     },
   ],
