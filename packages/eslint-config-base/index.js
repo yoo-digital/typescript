@@ -103,6 +103,9 @@ module.exports =  {
         avoidEscape: true,
       },
     ],
+
+    // reduce the severity to warn since there are valid use cases
+    'no-restricted-syntax': [ 'warn' ]
   },
   overrides: [
     {
