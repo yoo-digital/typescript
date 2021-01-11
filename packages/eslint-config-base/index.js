@@ -105,7 +105,7 @@ module.exports =  {
     ],
 
     // reduce the severity to warn since there are valid use cases
-    'no-restricted-syntax': [ 'warn' ]
+    'no-restricted-syntax': [ 'warn' ],
   },
   overrides: [
     {

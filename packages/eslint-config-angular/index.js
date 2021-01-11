@@ -1,11 +1,11 @@
 module.exports = {
   extends: [
-    '@yoo-digital/eslint-config-base'
+    '@yoo-digital/eslint-config-base',
   ],
   plugins: [
     '@angular-eslint/eslint-plugin',
     '@typescript-eslint/tslint',
-    'rxjs'
+    'rxjs',
   ],
   rules: {
     '@angular-eslint/component-class-suffix': 'error',
@@ -53,8 +53,8 @@ module.exports = {
     'no-underscore-dangle': [
       'error',
       {
-        'allowAfterThis': true
-      }
+        'allowAfterThis': true,
+      },
     ],
   },
 };
