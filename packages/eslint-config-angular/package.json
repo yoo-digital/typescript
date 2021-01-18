@@ -70,7 +70,7 @@
     "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
   },
   "engines": {
-    "node": ">= 12.4.0",
+    "node": ">= 10",
     "npm": ">= 6.14.0"
   },
   "dependencies": {
@@ -82,10 +82,10 @@
     "@angular-eslint/eslint-plugin-template": "^1.0.0",
     "@angular-eslint/schematics": "^1.0.0",
     "@angular-eslint/template-parser": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
-    "@typescript-eslint/eslint-plugin-tslint": "^4.0.1",
-    "@typescript-eslint/parser": "^4.0.1",
-    "eslint": "^7.8.1",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.18.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-rxjs": "^2.1.0",
     "eslint-plugin-rxjs-angular": "^1.0.0",
