@@ -106,6 +106,10 @@ module.exports =  {
 
     // reduce the severity to warn since there are valid use cases
     'no-restricted-syntax': [ 'warn' ],
+
+    // See Guild Protocol:
+    // https://yooapps.jira.com/wiki/spaces/FD/blog/2021/02/08/2647359596/Frontend+Guild+-+03.02.2021
+    'no-plusplus': 'off',
   },
   overrides: [
     {
