@@ -19,10 +19,6 @@
   },
   "contributors": [
     {
-      "name": "Anders Bengtson",
-      "email": "anders.bengtson@yoo.digital"
-    },
-    {
       "name": "Björn Bühler",
       "email": "bjoern.buehler@yoo.digital"
     },
@@ -31,8 +27,8 @@
       "email": "cedric.madoerin@yoo.digital"
     },
     {
-      "name": "Christoph Dörfel",
-      "email": "christoph.doerfel@yoo.digital"
+      "name": "Elia Reutlinger",
+      "email": "elia.reutlinger@yoo.digital"
     },
     {
       "name": "Emanuel Marsicovetere",
@@ -64,14 +60,16 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish"
+    "changed": "lerna changed",
+    "publish": "lerna publish",
+    "version": "lerna version"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "@typescript-eslint/parser": "^4.13.0",
-    "eslint": "^7.18.0",
-    "eslint-plugin-import": "^2.22.1",
-    "lerna": "^3.22.1",
-    "typescript": "^3.9.6"
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.0",
+    "lerna": "^4.0.0",
+    "typescript": "^4.4.0"
   }
 }
