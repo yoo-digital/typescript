@@ -1,14 +1,22 @@
 module.exports = {
   extends: [
     '@yoo-digital/eslint-config-base',
+    'plugin:@angular-eslint/recommended',
+    'plugin:rxjs/recommended',
   ],
   plugins: [
     '@angular-eslint/eslint-plugin',
-    '@typescript-eslint/tslint',
     'rxjs',
+    'rxjs-angular',
   ],
   rules: {
-    '@angular-eslint/component-class-suffix': 'error',
+    'no-underscore-dangle': [
+      'error',
+      {
+        'allowAfterThis': true,
+      },
+    ],
+    'class-methods-use-this': 'off',
     '@angular-eslint/component-selector': [
       'error',
       {
@@ -17,8 +25,6 @@ module.exports = {
         style: 'kebab-case',
       },
     ],
-    '@angular-eslint/contextual-lifecycle': 'error',
-    '@angular-eslint/directive-class-suffix': 'error',
     '@angular-eslint/directive-selector': [
       'error',
       {
@@ -29,32 +35,19 @@ module.exports = {
     ],
     '@angular-eslint/no-attribute-decorator': 'error',
     '@angular-eslint/no-forward-ref': 'error',
-    '@angular-eslint/no-host-metadata-property': 'error',
-    '@angular-eslint/no-input-rename': 'error',
-    '@angular-eslint/no-inputs-metadata-property': 'error',
-    '@angular-eslint/no-output-on-prefix': 'error',
-    '@angular-eslint/no-output-rename': 'error',
-    '@angular-eslint/no-outputs-metadata-property': 'error',
     '@angular-eslint/no-pipe-impure': 'error',
-    '@angular-eslint/use-lifecycle-interface': 'error',
-    '@angular-eslint/use-pipe-transform-interface': 'error',
-    'rxjs/no-ignored-observable': [ 'warn' ],
-    'rxjs/no-exposed-subjects': [ 'warn' ],
-    '@typescript-eslint/tslint/config': [
-      'error',
+    '@angular-eslint/no-queries-metadata-property': 'error',
+    '@angular-eslint/prefer-output-readonly': 'error',
+    '@angular-eslint/relative-url-prefix': 'error',
+    '@angular-eslint/use-injectable-provided-in': 'error',
+    'rxjs/finnish': 'warn',
+    'rxjs/no-ignored-observable': 'warn',
+    'rxjs/no-exposed-subjects': [
+      'warn',
       {
-        rules: {
-          'import-destructuring-spacing': true,
-          'number-literal-format': true,
-          'template-use-track-by-function': true,
-        },
+        'allowProtected': true,
       },
     ],
-    'no-underscore-dangle': [
-      'error',
-      {
-        'allowAfterThis': true,
-      },
-    ],
+    'rxjs-angular/prefer-takeuntil': 'error',
   },
 };
