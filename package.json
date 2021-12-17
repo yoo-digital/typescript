@@ -1,7 +1,6 @@
 {
   "name": "@yoo-digital/typescript",
   "description": "Mono repository containing reusable configuration/setup files for TypeScript projects within YOO",
-  "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "keywords": [
@@ -61,8 +60,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "changed": "lerna changed",
-    "publish": "lerna publish",
-    "version": "lerna version"
+    "publish:packages": "lerna publish",
+    "version:packages": "lerna version"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.0",
@@ -71,5 +70,6 @@
     "eslint-plugin-import": "^2.24.0",
     "lerna": "^4.0.0",
     "typescript": "^4.4.0"
-  }
+  },
+  "version": "0.0.0"
 }
