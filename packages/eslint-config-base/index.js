@@ -104,7 +104,7 @@ module.exports =  {
           'private-instance-method',
           'public-abstract-method',
           'protected-abstract-method',
-          'private-abstract-method'
+          'private-abstract-method',
         ],
       },
     }],
