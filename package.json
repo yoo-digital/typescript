@@ -46,6 +46,10 @@
       "email": "sacha.schmid@yoo.digital"
     },
     {
+      "name": "Tobias Wahl",
+      "email": "tobias.wahl@yoo.digital"
+    },
+    {
       "name": "Yanick Recher",
       "email": "yanick.recher@yoo.digital"
     }
@@ -64,12 +68,12 @@
     "version:packages": "lerna version"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.31.0",
-    "@typescript-eslint/parser": "^4.31.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-import": "^2.24.0",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-plugin-import": "^2.26.0",
     "lerna": "^4.0.0",
-    "typescript": "^4.4.0"
+    "typescript": "^4.6.4"
   },
   "version": "0.0.0"
 }
