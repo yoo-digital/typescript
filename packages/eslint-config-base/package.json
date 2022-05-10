@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-base",
   "description": "ESLint configuration file containing rules for TypeScript projects",
-  "version": "1.1.0-alpha.0",
+  "version": "1.1.0-alpha.1",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
