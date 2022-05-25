@@ -68,12 +68,7 @@
     "version:packages": "lerna version"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.23.0",
-    "@typescript-eslint/parser": "^5.23.0",
-    "eslint": "^8.15.0",
-    "eslint-plugin-import": "^2.26.0",
-    "lerna": "^4.0.0",
-    "typescript": "^4.6.4"
+    "lerna": "^4.0.0"
   },
   "version": "0.0.0"
 }
