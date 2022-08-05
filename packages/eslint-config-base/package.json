@@ -38,6 +38,10 @@
       "email": "emanuel.marsicovetere@yoo.digital"
     },
     {
+      "name": "Iryna Strykun",
+      "email": "iryna.strykun@yoo.digital"
+    },
+    {
       "name": "Kelvin Louis",
       "email": "kelvin.louis@yoo.digital"
     },
@@ -76,9 +80,9 @@
     "eslint-config-airbnb-base": "^15.0.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
-    "eslint": "^8.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unused-imports": "^2.0.0"
   }

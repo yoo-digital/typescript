@@ -39,6 +39,10 @@
       "email": "emanuel.marsicovetere@yoo.digital"
     },
     {
+      "name": "Iryna Strykun",
+      "email": "iryna.strykun@yoo.digital"
+    },
+    {
       "name": "Kelvin Louis",
       "email": "kelvin.louis@yoo.digital"
     },
@@ -77,14 +81,14 @@
     "@yoo-digital/eslint-config-base": "^1.1.0-alpha.2"
   },
   "peerDependencies": {
-    "@angular-eslint/builder": "^13.2.1",
-    "@angular-eslint/eslint-plugin": "^13.2.1",
-    "@angular-eslint/eslint-plugin-template": "^13.2.1",
-    "@angular-eslint/schematics": "^13.2.1",
-    "@angular-eslint/template-parser": "^13.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
-    "eslint": "^8.16.0",
+    "@angular-eslint/builder": "^14.0.2",
+    "@angular-eslint/eslint-plugin": "^14.0.2",
+    "@angular-eslint/eslint-plugin-template": "^14.0.2",
+    "@angular-eslint/schematics": "^14.0.2",
+    "@angular-eslint/template-parser": "^14.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-rxjs": "^5.0.2",
     "eslint-plugin-rxjs-angular": "^2.0.0",
