@@ -147,7 +147,11 @@ module.exports =  {
     ],
 
     // reduce the severity to warn since there are valid use cases
-    'no-restricted-syntax': [ 'warn' ],
+    'no-restricted-syntax': ['warn'],
+
+    // It is disabled because of a known issue causing issues in barrel files
+    // See: https://eslint.org/docs/latest/rules/no-restricted-exports#known-limitations
+    'no-restricted-exports': ['off'],
 
     // See Guild Protocol:
     // https://yooapps.jira.com/wiki/spaces/FD/blog/2021/02/08/2647359596/Frontend+Guild+-+03.02.2021
