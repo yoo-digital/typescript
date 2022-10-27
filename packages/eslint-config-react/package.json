@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-react",
   "description": "ESLint configuration file containing rules for React projects using TypeScript",
-  "version": "1.1.0-alpha.5",
+  "version": "1.1.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
