@@ -26,6 +26,13 @@ module.exports =  {
     },
   },
   rules: {
+    /**
+     * Allow different syntaxes for function components:
+     * - Arrow functions for normal use case
+     * - Generic functions for generic components
+     */
+    'react/function-component-definition': 'off',
+
     'react/jsx-filename-extension': [
       'error',
       { extensions: ['.ts', '.tsx'] },
