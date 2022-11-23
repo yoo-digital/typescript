@@ -2,6 +2,7 @@
   "name": "@yoo-digital/typescript",
   "description": "Mono repository containing reusable configuration/setup files for TypeScript projects within YOO",
   "private": true,
+  "version": "0.0.0",
   "license": "MIT",
   "keywords": [
     "TypeScript",
@@ -72,7 +73,6 @@
     "version:packages": "lerna version"
   },
   "devDependencies": {
-    "lerna": "^4.0.0"
-  },
-  "version": "0.0.0"
+    "lerna": "^6.0.3"
+  }
 }
