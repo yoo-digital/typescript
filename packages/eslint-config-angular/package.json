@@ -81,11 +81,11 @@
     "@yoo-digital/eslint-config-base": "^1.1.0"
   },
   "peerDependencies": {
-    "@angular-eslint/builder": "^13.5.0",
-    "@angular-eslint/eslint-plugin": "^13.5.0",
-    "@angular-eslint/eslint-plugin-template": "^13.5.0",
-    "@angular-eslint/schematics": "^13.5.0",
-    "@angular-eslint/template-parser": "^13.5.0",
+    "@angular-eslint/builder": "^14.4.0",
+    "@angular-eslint/eslint-plugin": "^14.4.0",
+    "@angular-eslint/eslint-plugin-template": "^14.4.0",
+    "@angular-eslint/schematics": "^14.4.0",
+    "@angular-eslint/template-parser": "^14.4.0",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "eslint": "^8.25.0",
