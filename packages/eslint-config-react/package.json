@@ -79,7 +79,7 @@
   },
   "engines": {
     "node": ">= 16",
-    "npm": ">= 8.15.0"
+    "npm": ">= 8"
   },
   "dependencies": {
     "@yoo-digital/eslint-config-base": "^1.2.0",
