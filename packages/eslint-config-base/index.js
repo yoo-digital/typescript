@@ -107,7 +107,7 @@ module.exports =  {
         ],
       },
     }],
-    'complexity': ['warn', 10],
+    'complexity': ['warn', 15],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -131,7 +131,7 @@ module.exports =  {
     ],
     'max-depth': ['warn', 3],
     'max-lines-per-function': ['warn', {
-      max: 50,
+      max: 75,
       skipBlankLines: true,
       skipComments: true,
     }],
@@ -168,6 +168,14 @@ module.exports =  {
         argsIgnorePattern: '^_',
       },
     ],
+
+    'max-len': ['error', 120, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
   },
   overrides: [
     {
