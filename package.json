@@ -74,10 +74,10 @@
     "bootstrap": "lerna bootstrap",
     "changed": "lerna changed",
     "publish:ci": "lerna publish from-package",
-    "publish:ci:canary": "lerna publish from-package --canary",
+    "publish:ci:canary": "lerna publish from-package",
     "publish:manual": "lerna publish",
     "version:ci": "lerna version --exact --conventional-commits",
-    "version:ci:canary": "lerna version --exact --conventional-commits --canary --preid canary",
+    "version:ci:canary": "lerna version --exact --conventional-commits --preid canary",
     "version:manual": "lerna version"
   },
   "devDependencies": {
