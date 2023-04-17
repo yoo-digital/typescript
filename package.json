@@ -77,7 +77,7 @@
     "publish:ci:canary": "lerna publish from-package",
     "publish:manual": "lerna publish",
     "version:ci": "lerna version --conventional-commits",
-    "version:ci:canary": "lerna version --conventional-commits --conventional-prerelease --preid canary",
+    "version:ci:canary": "lerna version --conventional-commits --conventional-bump-prerelease --preid canary",
     "version:manual": "lerna version"
   },
   "devDependencies": {
