@@ -1,0 +1,38 @@
+name: Publish Packages to NPM
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and NPM
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Bootstrap Lerna
+        run: lerna bootstrap
+
+      - name: Publish packages to NPM
+        if: github.ref == 'refs/heads/master'
+        run: |
+          lerna version --exact --conventional-commits --yes
+          lerna publish from-package --yes
+
+      - name: Publish packages as canary to NPM
+        if: github.ref == 'refs/heads/develop'
+        run: |
+          lerna version --exact --conventional-commits --canary --preid canary --yes
+          lerna publish from-package --canary --yes
