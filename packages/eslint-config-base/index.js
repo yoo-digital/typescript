@@ -107,7 +107,7 @@ module.exports =  {
         ],
       },
     }],
-    'complexity': ['warn', 15],
+    'complexity': ['warn', 10],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -131,7 +131,7 @@ module.exports =  {
     ],
     'max-depth': ['warn', 3],
     'max-lines-per-function': ['warn', {
-      max: 75,
+      max: 50,
       skipBlankLines: true,
       skipComments: true,
     }],
