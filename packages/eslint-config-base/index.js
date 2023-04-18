@@ -168,6 +168,13 @@ module.exports =  {
         argsIgnorePattern: '^_',
       },
     ],
+    'max-len': ['error', 120, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
     'lines-between-class-members': [
       'error',
       'always',
