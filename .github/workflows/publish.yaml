@@ -28,11 +28,11 @@ jobs:
       - name: Publish packages to NPM
         if: github.ref == 'refs/heads/master'
         run: |
-          lerna version --exact --conventional-commits --yes
-          lerna publish from-package --yes
+          npm run version:ci
+          npm run publish:ci
 
       - name: Publish packages as canary to NPM
         if: github.ref == 'refs/heads/develop'
         run: |
-          lerna version --exact --conventional-commits --canary --preid canary --yes
-          lerna publish from-package --canary --yes
+          npm run version:ci:canary
+          npm run publish:ci:canary
