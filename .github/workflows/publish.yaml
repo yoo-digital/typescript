@@ -20,7 +20,7 @@ jobs:
           node-version: 16
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Bootstrap Lerna
         run: lerna bootstrap
