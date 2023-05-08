@@ -73,8 +73,12 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "changed": "lerna changed",
-    "publish:packages": "lerna publish",
-    "version:packages": "lerna version"
+    "publish:ci": "lerna publish from-package --yes",
+    "publish:ci:canary": "lerna publish from-package --yes",
+    "publish:manual": "lerna publish",
+    "version:ci": "lerna version --exact --conventional-commits --yes",
+    "version:ci:canary": "lerna version --exact --conventional-commits --conventional-prerelease --preid canary --yes",
+    "version:manual": "lerna version"
   },
   "devDependencies": {
     "lerna": "^6.6.1"
