@@ -1,0 +1,49 @@
+name: Publish Packages to NPM
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and NPM
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Bootstrap Lerna
+        run: lerna bootstrap
+
+      - name: Setup Git user
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
+      - name: Publish packages to NPM
+        if: github.ref == 'refs/heads/master'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_YOO_DIGITAL }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm run version:ci
+          npm run publish:ci
+
+      - name: Publish packages as canary to NPM
+        if: github.ref == 'refs/heads/develop'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_YOO_DIGITAL }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm run version:ci:canary
+          npm run publish:ci:canary
