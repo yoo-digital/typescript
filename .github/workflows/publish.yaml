@@ -9,6 +9,8 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_YOO_DIGITAL }}
 
     steps:
       - name: Checkout Repository
@@ -30,10 +32,12 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
+      - name: Point to npm registry
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
+
       - name: Publish packages to NPM
         if: github.ref == 'refs/heads/master'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_YOO_DIGITAL }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run version:ci
@@ -42,7 +46,6 @@ jobs:
       - name: Publish packages as canary to NPM
         if: github.ref == 'refs/heads/develop'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_YOO_DIGITAL }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run version:ci:canary
