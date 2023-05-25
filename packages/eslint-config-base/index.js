@@ -34,7 +34,14 @@ module.exports =  {
         'default': 'array'
       }
     ],
-    '@typescript-eslint/explicit-member-accessibility': 'error',
+    '@typescript-eslint/explicit-member-accessibility': [
+      'error',
+      {
+        overrides: {
+          constructors: 'no-public'
+        }
+      }
+    ],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
@@ -158,6 +165,10 @@ module.exports =  {
 
     // note you must disable the base rule as it can report incorrect errors
     'no-unused-vars': 'off',
+
+    // note you must disable the base rule as it can report incorrect errors
+    '@typescript-eslint/no-unused-vars': 'off',
+
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
