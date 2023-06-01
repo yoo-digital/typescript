@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-angular",
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
-  "version": "14.0.2-canary.0",
+  "version": "16.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -85,17 +85,17 @@
     "@yoo-digital/eslint-config-base": "1.2.2-canary.0"
   },
   "peerDependencies": {
-    "@angular-eslint/builder": "^14.4.0",
-    "@angular-eslint/eslint-plugin": "^14.4.0",
-    "@angular-eslint/eslint-plugin-template": "^14.4.0",
-    "@angular-eslint/schematics": "^14.4.0",
-    "@angular-eslint/template-parser": "^14.4.0",
+    "@angular-eslint/builder": "^16.0.3",
+    "@angular-eslint/eslint-plugin": "^16.0.3",
+    "@angular-eslint/eslint-plugin-template": "^16.0.3",
+    "@angular-eslint/schematics": "^16.0.3",
+    "@angular-eslint/template-parser": "^16.0.3",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
     "eslint": "^8.37.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-rxjs": "^5.0.3",
-    "eslint-plugin-rxjs-angular": "^2.0.0",
+    "eslint-plugin-rxjs-angular": "^2.0.1",
     "eslint-plugin-unused-imports": "^2.0.0"
   }
 }
