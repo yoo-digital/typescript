@@ -82,7 +82,7 @@
     "npm": ">= 8"
   },
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "1.2.1"
+    "@yoo-digital/eslint-config-base": "1.2.2-canary.0"
   },
   "peerDependencies": {
     "@angular-eslint/builder": "^16.0.3",
