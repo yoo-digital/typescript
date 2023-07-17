@@ -1,4 +1,4 @@
-module.exports =  {
+module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'unused-imports'],
   extends: [
@@ -37,9 +37,7 @@ module.exports =  {
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       {
-        overrides: {
-          constructors: 'no-public'
-        }
+        accessibility: 'no-public',
       }
     ],
     '@typescript-eslint/explicit-function-return-type': [
