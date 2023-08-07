@@ -81,6 +81,6 @@
     "version:manual": "lerna version"
   },
   "devDependencies": {
-    "lerna": "^6.6.1"
+    "lerna": "^7.1.4"
   }
 }
