@@ -6,6 +6,7 @@ module.exports =  {
     // https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
     'airbnb',
     '@yoo-digital/eslint-config-base',
+    'plugin:react/jsx-runtime',
   ],
   parserOptions: {
     sourceType: 'module',
