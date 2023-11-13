@@ -72,11 +72,12 @@
     "publish:ci": "lerna publish from-package --yes",
     "publish:ci:canary": "lerna publish from-package --yes",
     "publish:manual": "lerna publish",
-    "version:ci": "lerna version --exact --conventional-commits --conventional-graduate --yes",
-    "version:ci:canary": "lerna version --exact --conventional-commits --conventional-prerelease --conventional-bump-prerelease --preid canary --yes",
+    "version:ci": "lerna version --exact --conventional-commits --changelog-preset conventionalcommits --conventional-graduate --yes",
+    "version:ci:canary": "lerna version --exact --conventional-commits --changelog-preset conventionalcommits --conventional-prerelease --conventional-bump-prerelease --preid canary --yes",
     "version:manual": "lerna version"
   },
   "devDependencies": {
-    "lerna": "^7.4.2"
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "lerna": "^7.1.4"
   }
 }
