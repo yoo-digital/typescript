@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-angular",
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
-  "version": "16.0.2",
+  "version": "16.0.3-canary.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -78,7 +78,7 @@
     "npm": ">= 8"
   },
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "1.2.3"
+    "@yoo-digital/eslint-config-base": "1.2.4-canary.0"
   },
   "peerDependencies": {
     "@angular-eslint/builder": "^16.0.3",
