@@ -24,9 +24,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Bootstrap Lerna
-        run: lerna bootstrap
-
       - name: Setup Git user
         run: |
           git config user.name "${{ github.actor }}"

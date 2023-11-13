@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-base",
   "description": "ESLint configuration file containing rules for TypeScript projects",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -28,10 +28,6 @@
     {
       "name": "Cédric Madörin",
       "email": "cedric.madoerin@yoo.digital"
-    },
-    {
-      "name": "Elia Reutlinger",
-      "email": "elia.reutlinger@yoo.digital"
     },
     {
       "name": "Emanuel Marsicovetere",
