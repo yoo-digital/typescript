@@ -57,7 +57,7 @@ module.exports = {
         '*.ts',
       ],
       extends: [
-        'plugin:@angular-eslint/template/process-inline-templates'
+        'plugin:@angular-eslint/template/process-inline-templates',
       ],
     },
     {
@@ -65,7 +65,7 @@ module.exports = {
         '*.html',
       ],
       extends: [
-        'plugin:@angular-eslint/template/recommended'
+        'plugin:@angular-eslint/template/recommended',
       ],
       rules: {
         '@angular-eslint/template/prefer-control-flow': 'error',
@@ -80,7 +80,7 @@ module.exports = {
               'ATTRIBUTE_BINDING',
               'INPUT_BINDING',
               'TWO_WAY_BINDING',
-              'OUTPUT_BINDING'
+              'OUTPUT_BINDING',
             ],
           },
         ],
