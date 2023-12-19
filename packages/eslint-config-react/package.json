@@ -74,8 +74,8 @@
     "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
   },
   "engines": {
-    "node": ">= 16",
-    "npm": ">= 8"
+    "node": ">= 18",
+    "npm": ">= 9"
   },
   "dependencies": {
     "@yoo-digital/eslint-config-base": "1.2.4-canary.0",
