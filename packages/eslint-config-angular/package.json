@@ -77,9 +77,6 @@
     "node": ">= 18",
     "npm": ">= 9"
   },
-  "dependencies": {
-    "@yoo-digital/eslint-config-base": "^1.2.4-canary.0"
-  },
   "peerDependencies": {
     "@angular-eslint/builder": "^17.1.1",
     "@angular-eslint/eslint-plugin": "^17.1.1",

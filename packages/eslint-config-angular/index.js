@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    '@yoo-digital/eslint-config-base',
     'plugin:@angular-eslint/recommended',
     'plugin:rxjs/recommended',
   ],
