@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    '@yoo-digital/eslint-config-base',
     'plugin:@angular-eslint/recommended',
     'plugin:rxjs/recommended',
   ],
@@ -40,6 +39,7 @@ module.exports = {
     '@angular-eslint/prefer-output-readonly': 'error',
     '@angular-eslint/relative-url-prefix': 'error',
     '@angular-eslint/use-injectable-provided-in': 'error',
+    '@angular-eslint/prefer-standalone-component': 'warn',
     'rxjs/finnish': 'warn',
     'rxjs/no-ignored-observable': 'warn',
     'rxjs/no-exposed-subjects': [
@@ -50,4 +50,41 @@ module.exports = {
     ],
     'rxjs-angular/prefer-takeuntil': 'error',
   },
+  overrides: [
+    {
+      files: [
+        '*.ts',
+      ],
+      extends: [
+        'plugin:@angular-eslint/template/process-inline-templates',
+      ],
+    },
+    {
+      files: [
+        '*.html',
+      ],
+      extends: [
+        'plugin:@angular-eslint/template/recommended',
+      ],
+      rules: {
+        '@angular-eslint/template/prefer-control-flow': 'error',
+        '@angular-eslint/template/no-interpolation-in-attributes': 'error',
+        '@angular-eslint/template/no-duplicate-attributes': 'error',
+        '@angular-eslint/template/attributes-order': [
+          'error',
+          {
+            order: [
+              'STRUCTURAL_DIRECTIVE',
+              'TEMPLATE_REFERENCE',
+              'ATTRIBUTE_BINDING',
+              'INPUT_BINDING',
+              'TWO_WAY_BINDING',
+              'OUTPUT_BINDING',
+            ],
+          },
+        ],
+        '@angular-eslint/template/prefer-self-closing-tags': 'error',
+      },
+    },
+  ],
 };
