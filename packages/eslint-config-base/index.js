@@ -48,14 +48,6 @@ module.exports = {
     ],
 
     // note you must disable the base rule as it can report incorrect errors
-    'func-call-spacing': 'off',
-    '@typescript-eslint/func-call-spacing': ['error'],
-
-    // note you must disable the base rule as it can report incorrect errors
-    'indent': 'off',
-    '@typescript-eslint/indent': ['error', 2],
-
-    // note you must disable the base rule as it can report incorrect errors
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
 
@@ -71,21 +63,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/prefer-interface': 'off',
-    '@typescript-eslint/unified-signatures': 'warn',
-    '@typescript-eslint/type-annotation-spacing': 'error',
-    '@typescript-eslint/member-delimiter-style': [
-      'error',
-      {
-        multiline: {
-          delimiter: 'semi',
-          requireLast: true,
-        },
-        singleline: {
-          delimiter: 'semi',
-          requireLast: false,
-        },
-      },
-    ],
     '@typescript-eslint/unified-signatures': 'warn',
     '@typescript-eslint/member-ordering': ['warn', {
       default: {
@@ -142,13 +119,6 @@ module.exports = {
     }],
     'no-await-in-loop': 'error',
     'no-useless-rename': 'error',
-    'quotes': [
-      'error',
-      'single',
-      {
-        avoidEscape: true,
-      },
-    ],
 
     // reduce the severity to warn since there are valid use cases
     'no-restricted-syntax': ['warn'],
@@ -161,36 +131,79 @@ module.exports = {
     // https://yooapps.jira.com/wiki/spaces/FD/blog/2021/02/08/2647359596/Frontend+Guild+-+03.02.2021
     'no-plusplus': 'off',
 
-    // note you must disable the base rule as it can report incorrect errors
-    'no-unused-vars': 'off',
+    // The following rules are disabled due to prettier
+    'import/order': 'off',
 
-    // note you must disable the base rule as it can report incorrect errors
-    '@typescript-eslint/no-unused-vars': 'off',
-
-    'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        vars: 'all',
-        varsIgnorePattern: '^_',
-        args: 'after-used',
-        argsIgnorePattern: '^_',
-      },
-    ],
-    'max-len': ['error', 120, 2, {
-      ignoreUrls: true,
-      ignoreComments: false,
-      ignoreRegExpLiterals: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
-    'lines-between-class-members': [
-      'error',
-      'always',
-      {
-        'exceptAfterSingleLine': true
-      },
-    ]
+    // The following rules are disabled due to the eslint deprecations
+    'array-bracket-newline': 'off',
+    'array-bracket-spacing': 'off',
+    'array-element-newline': 'off',
+    'arrow-parens': 'off',
+    'arrow-spacing': 'off',
+    'block-spacing': 'off',
+    'brace-style': 'off',
+    'comma-dangle': 'off',
+    'comma-spacing': 'off',
+    'comma-style': 'off',
+    'computed-property-spacing': 'off',
+    'dot-location': 'off',
+    'eol-last': 'off',
+    'func-call-spacing': 'off',
+    'function-call-argument-newline': 'off',
+    'function-paren-newline': 'off',
+    'generator-star-spacing': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'indent': 'off',
+    'jsx-quotes': 'off',
+    'key-spacing': 'off',
+    'keyword-spacing': 'off',
+    'linebreak-style': 'off',
+    'lines-between-class-members': 'off',
+    'lines-around-comment': 'off',
+    'max-len': 'off',
+    'max-statements-per-line': 'off',
+    'multiline-ternary': 'off',
+    'new-parens': 'off',
+    'newline-per-chained-call': 'off',
+    'no-confusing-arrow': 'off',
+    'no-extra-parens': 'off',
+    'no-extra-semi': 'off',
+    'no-floating-decimal': 'off',
+    'no-mixed-operators': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'no-multi-spaces': 'off',
+    'no-multiple-empty-lines': 'off',
+    'no-tabs': 'off',
+    'no-trailing-spaces': 'off',
+    'no-whitespace-before-property': 'off',
+    'nonblock-statement-body-position': 'off',
+    'object-curly-newline': 'off',
+    'object-curly-spacing': 'off',
+    'object-property-newline': 'off',
+    'one-var-declaration-per-line': 'off',
+    'operator-linebreak': 'off',
+    'padded-blocks': 'off',
+    'padding-line-between-statements': 'off',
+    'quote-props': 'off',
+    'quotes': 'off',
+    'rest-spread-spacing': 'off',
+    'semi': 'off',
+    'semi-spacing': 'off',
+    'semi-style': 'off',
+    'space-before-blocks': 'off',
+    'space-before-function-paren': 'off',
+    'space-in-parens': 'off',
+    'space-infix-ops': 'off',
+    'space-unary-ops': 'off',
+    'spaced-comment': 'off',
+    'switch-colon-spacing': 'off',
+    'template-curly-spacing': 'off',
+    'template-tag-spacing': 'off',
+    'wrap-iife': 'off',
+    'wrap-regex': 'off',
+    'yield-star-spacing': 'off',
+    '@typescript-eslint/func-call-spacing': 'off',
+    '@typescript-eslint/indent': 'off',
   },
   overrides: [
     {
