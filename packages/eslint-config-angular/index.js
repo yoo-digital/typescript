@@ -70,19 +70,6 @@ module.exports = {
         '@angular-eslint/template/prefer-control-flow': 'error',
         '@angular-eslint/template/no-interpolation-in-attributes': 'error',
         '@angular-eslint/template/no-duplicate-attributes': 'error',
-        '@angular-eslint/template/attributes-order': [
-          'error',
-          {
-            order: [
-              'STRUCTURAL_DIRECTIVE',
-              'TEMPLATE_REFERENCE',
-              'ATTRIBUTE_BINDING',
-              'INPUT_BINDING',
-              'TWO_WAY_BINDING',
-              'OUTPUT_BINDING',
-            ],
-          },
-        ],
         '@angular-eslint/template/prefer-self-closing-tags': 'error',
       },
     },
