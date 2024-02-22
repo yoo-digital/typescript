@@ -1,6 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'unused-imports'],
+  plugins: ['@typescript-eslint'],
   extends: [
     // Configuration is documented here: https://github.com/airbnb/javascript
     // Rules can be found here:
