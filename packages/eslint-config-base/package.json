@@ -84,5 +84,6 @@
     "@typescript-eslint/parser": "^7.0.2",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.29.1"
-  }
+  },
+  "prettier": "@yoo-digital/prettier"
 }
