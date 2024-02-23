@@ -52,6 +52,9 @@ module.exports = {
 
     // Turning off due to Prettier clash
     'react/jsx-one-expression-per-line': 'off',
+    'react/jsx-curly-newline': 'off',
+    'react/jsx-wrap-multilines': 'off',
+    'react/jsx-closing-tag-location': 'off',
   },
   overrides: [
     /**
