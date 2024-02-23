@@ -15,35 +15,45 @@ module.exports = {
   },
   parserOptions: {
     sourceType: 'module',
-    project: [
-      './tsconfig.json',
-    ],
+    project: ['./tsconfig.json'],
     tsconfigRootDir: './',
   },
   settings: {
     'import/resolver': {
-      'node': {
-        'extensions': ['.js', '.ts'],
+      node: {
+        extensions: ['.js', '.ts'],
       },
     },
   },
   rules: {
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        args: 'all',
+        argsIgnorePattern: '^_',
+        caughtErrors: 'all',
+        caughtErrorsIgnorePattern: '^_',
+        destructuredArrayIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        ignoreRestSiblings: true,
+      },
+    ],
     '@typescript-eslint/array-type': [
       'error',
       {
-        'default': 'array'
-      }
+        default: 'array',
+      },
     ],
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       {
         accessibility: 'no-public',
-      }
+      },
     ],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
-        'allowTypedFunctionExpressions': true
+        allowTypedFunctionExpressions: true,
       },
     ],
 
@@ -64,59 +74,60 @@ module.exports = {
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/prefer-interface': 'off',
     '@typescript-eslint/unified-signatures': 'warn',
-    '@typescript-eslint/member-ordering': ['warn', {
-      default: {
-        memberTypes: [
-          'public-static-field',
-          'protected-static-field',
-          'private-static-field',
-          'public-decorated-field',
-          'protected-decorated-field',
-          'private-decorated-field',
-          'public-field',
-          'protected-field',
-          'private-field',
-          'constructor',
-          'public-static-method',
-          'protected-static-method',
-          'private-static-method',
-          'public-method',
-          'protected-method',
-          'private-method',
-          'private-instance-method',
-          'public-abstract-method',
-          'protected-abstract-method',
-        ],
+    '@typescript-eslint/member-ordering': [
+      'warn',
+      {
+        default: {
+          memberTypes: [
+            'public-static-field',
+            'protected-static-field',
+            'private-static-field',
+            'public-decorated-field',
+            'protected-decorated-field',
+            'private-decorated-field',
+            'public-field',
+            'protected-field',
+            'private-field',
+            'constructor',
+            'public-static-method',
+            'protected-static-method',
+            'private-static-method',
+            'public-method',
+            'protected-method',
+            'private-method',
+            'private-instance-method',
+            'public-abstract-method',
+            'protected-abstract-method',
+          ],
+        },
       },
-    }],
-    'complexity': ['warn', 10],
+    ],
+    complexity: ['warn', 10],
     'import/extensions': [
       'error',
       'ignorePackages',
       {
-        'js': 'never',
-        'jsx': 'never',
-        'ts': 'never',
-        'tsx': 'never',
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: [
-          '.storybook/**',
-          'stories/**',
-          "**/*.test.*",
-          '**/*.spec.*',
-        ],
+        devDependencies: ['.storybook/**', 'stories/**', '**/*.test.*', '**/*.spec.*'],
       },
     ],
     'max-depth': ['warn', 3],
-    'max-lines-per-function': ['warn', {
-      max: 50,
-      skipBlankLines: true,
-      skipComments: true,
-    }],
+    'max-lines-per-function': [
+      'warn',
+      {
+        max: 50,
+        skipBlankLines: true,
+        skipComments: true,
+      },
+    ],
     'no-await-in-loop': 'error',
     'no-useless-rename': 'error',
 
@@ -153,7 +164,7 @@ module.exports = {
     'function-paren-newline': 'off',
     'generator-star-spacing': 'off',
     'implicit-arrow-linebreak': 'off',
-    'indent': 'off',
+    indent: 'off',
     'jsx-quotes': 'off',
     'key-spacing': 'off',
     'keyword-spacing': 'off',
@@ -185,9 +196,9 @@ module.exports = {
     'padded-blocks': 'off',
     'padding-line-between-statements': 'off',
     'quote-props': 'off',
-    'quotes': 'off',
+    quotes: 'off',
     'rest-spread-spacing': 'off',
-    'semi': 'off',
+    semi: 'off',
     'semi-spacing': 'off',
     'semi-style': 'off',
     'space-before-blocks': 'off',
@@ -207,13 +218,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: [
-        '.storybook/**',
-        'stories/**',
-        '**/*.stories.*',
-        "**/*.test.*",
-        '**/*.spec.*',
-      ],
+      files: ['.storybook/**', 'stories/**', '**/*.stories.*', '**/*.test.*', '**/*.spec.*'],
       rules: {
         'max-lines-per-function': 'off',
         '@typescript-eslint/no-explicit-any': 'off',

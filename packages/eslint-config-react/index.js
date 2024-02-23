@@ -1,4 +1,4 @@
-module.exports =  {
+module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     // Configuration is documented here: https://github.com/airbnb/javascript
@@ -18,8 +18,8 @@ module.exports =  {
   },
   settings: {
     'import/resolver': {
-      'node': {
-        'extensions': ['.js', '.jsx', '.ts', '.tsx'],
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
     react: {
@@ -34,10 +34,7 @@ module.exports =  {
      */
     'react/function-component-definition': 'off',
 
-    'react/jsx-filename-extension': [
-      'error',
-      { extensions: ['.ts', '.tsx'] },
-    ],
+    'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
 
     'react/jsx-props-no-spreading': 'off',
 
@@ -52,6 +49,9 @@ module.exports =  {
      */
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
+
+    // Turning off due to Prettier clash
+    'react/jsx-one-expression-per-line': 'off',
   },
   overrides: [
     /**
@@ -63,12 +63,7 @@ module.exports =  {
      * See: https://github.com/eslint/eslint/issues/12236
      */
     {
-      files: [
-        'src/components/**',
-        'src/hooks/**',
-        'src/pages/**',
-        'src/layouts/**',
-      ],
+      files: ['src/components/**', 'src/hooks/**', 'src/pages/**', 'src/layouts/**'],
       rules: {
         'max-lines-per-function': 'off',
       },
