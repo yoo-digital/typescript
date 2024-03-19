@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-angular",
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
-  "version": "17.1.0",
+  "version": "17.2.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -86,6 +86,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "eslint": "^8.56.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-rxjs-angular": "^2.0.1"
