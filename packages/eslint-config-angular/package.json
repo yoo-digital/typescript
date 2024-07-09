@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-angular",
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
-  "version": "17.2.1",
+  "version": "18.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -78,11 +78,11 @@
     "npm": ">= 9"
   },
   "peerDependencies": {
-    "@angular-eslint/builder": "^17.2.1",
-    "@angular-eslint/eslint-plugin": "^17.2.1",
-    "@angular-eslint/eslint-plugin-template": "^17.2.1",
-    "@angular-eslint/schematics": "^17.2.1",
-    "@angular-eslint/template-parser": "^17.2.1",
+    "@angular-eslint/builder": "^18.0.0",
+    "@angular-eslint/eslint-plugin": "^18.0.0",
+    "@angular-eslint/eslint-plugin-template": "^18.0.0",
+    "@angular-eslint/schematics": "^18.0.0",
+    "@angular-eslint/template-parser": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "eslint": "^8.56.0",
