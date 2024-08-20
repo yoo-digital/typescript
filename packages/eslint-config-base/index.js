@@ -59,6 +59,13 @@ module.exports = {
         allowTypedFunctionExpressions: true,
       },
     ],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {
+        prefer: 'type-imports',
+      },
+    ],
+    'import/consistent-type-specifier-style': 'off',
 
     // note you must disable the base rule as it can report incorrect errors
     'no-useless-constructor': 'off',
