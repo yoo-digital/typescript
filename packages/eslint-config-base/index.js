@@ -63,6 +63,7 @@ module.exports = {
       'error',
       {
         prefer: 'type-imports',
+        fixStyle: 'inline-type-imports',
       },
     ],
     'import/consistent-type-specifier-style': 'off',
