@@ -79,7 +79,7 @@
   "devDependencies": {
     "@yoo-digital/prettier": "^1.0.4",
     "conventional-changelog-conventionalcommits": "^7.0.2",
-    "lerna": "^7.1.4"
+    "lerna": "^8.1.8"
   },
   "prettier": "@yoo-digital/prettier"
 }
