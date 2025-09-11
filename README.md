@@ -1,10 +1,16 @@
 # YOO TypeScript
+
+> ⚠️ This repository together with others has been merged into the [yoo-digital/config monorepo](https://github.com/yoo-digital/config).
+> You can find the @yoo-digital/eslint-config-base package under this [URL](https://github.com/yoo-digital/config/tree/main/packages/eslint-config-base).
+> You can find the @yoo-digital/eslint-config-react package under this [URL](https://github.com/yoo-digital/config/tree/main/packages/eslint-config-react).
+> You can find the @yoo-digital/eslint-config-angular package under this [URL](https://github.com/yoo-digital/config/tree/main/packages/eslint-config-angular).
+
 _This monorepo contains configuration and helper files to bootstrap TypeScript projects @ YOO._
 
 ## Introduction
 This monorepo is a private repository. However, it contains packages that are publicly published
 to the npm registry.
-The published packages can be found in our npm organization 
+The published packages can be found in our npm organization
 [here (@yoo-digital)](https://www.npmjs.com/org/yoo-digital).
 We use [lerna](https://github.com/lerna/lerna) to reduce the burden of publishing the packages.
 
@@ -43,7 +49,7 @@ yarn install
 ```
 
 ### Publishing and Versioning
-As stated in the introduction, [lerna](https://github.com/lerna/lerna) 
+As stated in the introduction, [lerna](https://github.com/lerna/lerna)
 is used to publish the packages. Each package is versioned independently.
 If changes are made to a package that is a dependant of other packages, the other packages
 have to be newly published as well. For example, changing definitions within _eslint-config-base_ affects
